@@ -1,0 +1,743 @@
+{
+ "verifiedOn": "2026-11-26",
+ "method": {
+  "homepage-fetch": "Fetched the domain; the page title names the company",
+  "web-search": "Site blocks automated fetches; official careers URL confirmed via web search results on the same domain",
+  "redirect": "Fetched the domain; it redirects to the company's current official site (also listed)"
+ },
+ "companies": [
+  {
+   "company": "Tata Consultancy Services",
+   "aliases": [
+    "tcs",
+    "tata consultancy services",
+    "tata consultancy"
+   ],
+   "domains": [
+    "tcs.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "web-search"
+  },
+  {
+   "company": "Infosys",
+   "aliases": [
+    "infosys"
+   ],
+   "domains": [
+    "infosys.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "web-search"
+  },
+  {
+   "company": "Wipro",
+   "aliases": [
+    "wipro"
+   ],
+   "domains": [
+    "wipro.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "HCLTech",
+   "aliases": [
+    "hcltech",
+    "hcl technologies",
+    "hcl"
+   ],
+   "domains": [
+    "hcltech.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Tech Mahindra",
+   "aliases": [
+    "tech mahindra",
+    "techmahindra"
+   ],
+   "domains": [
+    "techmahindra.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Accenture",
+   "aliases": [
+    "accenture"
+   ],
+   "domains": [
+    "accenture.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Cognizant",
+   "aliases": [
+    "cognizant"
+   ],
+   "domains": [
+    "cognizant.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Capgemini",
+   "aliases": [
+    "capgemini"
+   ],
+   "domains": [
+    "capgemini.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Deloitte",
+   "aliases": [
+    "deloitte"
+   ],
+   "domains": [
+    "deloitte.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "EY",
+   "aliases": [
+    "ey",
+    "ernst & young",
+    "ernst and young"
+   ],
+   "domains": [
+    "ey.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "KPMG",
+   "aliases": [
+    "kpmg"
+   ],
+   "domains": [
+    "kpmg.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "PwC",
+   "aliases": [
+    "pwc",
+    "pricewaterhousecoopers"
+   ],
+   "domains": [
+    "pwc.com",
+    "pwc.in"
+   ],
+   "verified": "2026-11-26",
+   "how": "web-search"
+  },
+  {
+   "company": "Amazon",
+   "aliases": [
+    "amazon"
+   ],
+   "domains": [
+    "amazon.jobs",
+    "amazon.com",
+    "amazon.in"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Google",
+   "aliases": [
+    "google",
+    "alphabet"
+   ],
+   "domains": [
+    "google.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Microsoft",
+   "aliases": [
+    "microsoft"
+   ],
+   "domains": [
+    "microsoft.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Meta",
+   "aliases": [
+    "meta",
+    "facebook",
+    "instagram",
+    "whatsapp"
+   ],
+   "domains": [
+    "metacareers.com",
+    "meta.com",
+    "facebook.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "web-search"
+  },
+  {
+   "company": "Apple",
+   "aliases": [
+    "apple"
+   ],
+   "domains": [
+    "apple.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "IBM",
+   "aliases": [
+    "ibm"
+   ],
+   "domains": [
+    "ibm.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Oracle",
+   "aliases": [
+    "oracle"
+   ],
+   "domains": [
+    "oracle.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Flipkart",
+   "aliases": [
+    "flipkart"
+   ],
+   "domains": [
+    "flipkart.com",
+    "flipkartcareers.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Paytm",
+   "aliases": [
+    "paytm",
+    "one97"
+   ],
+   "domains": [
+    "paytm.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Zomato",
+   "aliases": [
+    "zomato"
+   ],
+   "domains": [
+    "zomato.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Swiggy",
+   "aliases": [
+    "swiggy"
+   ],
+   "domains": [
+    "swiggy.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Reliance",
+   "aliases": [
+    "reliance",
+    "reliance industries",
+    "ril"
+   ],
+   "domains": [
+    "ril.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Jio",
+   "aliases": [
+    "jio",
+    "reliance jio"
+   ],
+   "domains": [
+    "jio.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "HDFC Bank",
+   "aliases": [
+    "hdfc bank",
+    "hdfc"
+   ],
+   "domains": [
+    "hdfcbank.com",
+    "hdfc.bank.in"
+   ],
+   "verified": "2026-11-26",
+   "how": "redirect"
+  },
+  {
+   "company": "ICICI Bank",
+   "aliases": [
+    "icici bank",
+    "icici"
+   ],
+   "domains": [
+    "icicibank.com",
+    "icici.bank.in"
+   ],
+   "verified": "2026-11-26",
+   "how": "redirect"
+  },
+  {
+   "company": "Axis Bank",
+   "aliases": [
+    "axis bank"
+   ],
+   "domains": [
+    "axisbank.com",
+    "axis.bank.in"
+   ],
+   "verified": "2026-11-26",
+   "how": "redirect"
+  },
+  {
+   "company": "Kotak Mahindra Bank",
+   "aliases": [
+    "kotak"
+   ],
+   "domains": [
+    "kotak.com",
+    "kotak.bank.in"
+   ],
+   "verified": "2026-11-26",
+   "how": "redirect"
+  },
+  {
+   "company": "State Bank of India",
+   "aliases": [
+    "state bank of india",
+    "sbi"
+   ],
+   "domains": [
+    "sbi.co.in"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Internshala",
+   "aliases": [
+    "internshala"
+   ],
+   "domains": [
+    "internshala.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Naukri",
+   "aliases": [
+    "naukri"
+   ],
+   "domains": [
+    "naukri.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "LinkedIn",
+   "aliases": [
+    "linkedin"
+   ],
+   "domains": [
+    "linkedin.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Unstop",
+   "aliases": [
+    "unstop"
+   ],
+   "domains": [
+    "unstop.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Indeed",
+   "aliases": [
+    "indeed"
+   ],
+   "domains": [
+    "indeed.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Glassdoor",
+   "aliases": [
+    "glassdoor"
+   ],
+   "domains": [
+    "glassdoor.com",
+    "glassdoor.co.in"
+   ],
+   "verified": "2026-11-26",
+   "how": "redirect"
+  },
+  {
+   "company": "LTIMindtree",
+   "aliases": [
+    "ltimindtree",
+    "lti mindtree",
+    "ltm"
+   ],
+   "domains": [
+    "ltimindtree.com",
+    "ltm.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "redirect"
+  },
+  {
+   "company": "Larsen & Toubro",
+   "aliases": [
+    "larsen & toubro",
+    "larsen and toubro",
+    "l&t"
+   ],
+   "domains": [
+    "larsentoubro.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Mphasis",
+   "aliases": [
+    "mphasis"
+   ],
+   "domains": [
+    "mphasis.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Persistent Systems",
+   "aliases": [
+    "persistent systems",
+    "persistent"
+   ],
+   "domains": [
+    "persistent.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Zoho",
+   "aliases": [
+    "zoho"
+   ],
+   "domains": [
+    "zoho.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Freshworks",
+   "aliases": [
+    "freshworks"
+   ],
+   "domains": [
+    "freshworks.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Adobe",
+   "aliases": [
+    "adobe"
+   ],
+   "domains": [
+    "adobe.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Salesforce",
+   "aliases": [
+    "salesforce"
+   ],
+   "domains": [
+    "salesforce.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Cisco",
+   "aliases": [
+    "cisco"
+   ],
+   "domains": [
+    "cisco.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Intel",
+   "aliases": [
+    "intel"
+   ],
+   "domains": [
+    "intel.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "web-search"
+  },
+  {
+   "company": "NVIDIA",
+   "aliases": [
+    "nvidia"
+   ],
+   "domains": [
+    "nvidia.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Goldman Sachs",
+   "aliases": [
+    "goldman sachs"
+   ],
+   "domains": [
+    "goldmansachs.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "JPMorgan Chase",
+   "aliases": [
+    "jpmorgan",
+    "jp morgan",
+    "jpmorgan chase"
+   ],
+   "domains": [
+    "jpmorganchase.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Morgan Stanley",
+   "aliases": [
+    "morgan stanley"
+   ],
+   "domains": [
+    "morganstanley.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Razorpay",
+   "aliases": [
+    "razorpay"
+   ],
+   "domains": [
+    "razorpay.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "PhonePe",
+   "aliases": [
+    "phonepe"
+   ],
+   "domains": [
+    "phonepe.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Myntra",
+   "aliases": [
+    "myntra"
+   ],
+   "domains": [
+    "myntra.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Airtel",
+   "aliases": [
+    "airtel",
+    "bharti airtel"
+   ],
+   "domains": [
+    "airtel.in"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Bajaj Finserv",
+   "aliases": [
+    "bajaj finserv"
+   ],
+   "domains": [
+    "bajajfinserv.in"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Tata Motors",
+   "aliases": [
+    "tata motors"
+   ],
+   "domains": [
+    "tatamotors.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Mahindra",
+   "aliases": [
+    "mahindra"
+   ],
+   "domains": [
+    "mahindra.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Qualcomm",
+   "aliases": [
+    "qualcomm"
+   ],
+   "domains": [
+    "qualcomm.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Atlassian",
+   "aliases": [
+    "atlassian"
+   ],
+   "domains": [
+    "atlassian.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "BYJU'S",
+   "aliases": [
+    "byjus",
+    "byju"
+   ],
+   "domains": [
+    "byjus.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Samsung",
+   "aliases": [
+    "samsung"
+   ],
+   "domains": [
+    "samsung.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Siemens",
+   "aliases": [
+    "siemens"
+   ],
+   "domains": [
+    "siemens.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  },
+  {
+   "company": "Bosch",
+   "aliases": [
+    "bosch"
+   ],
+   "domains": [
+    "bosch.com"
+   ],
+   "verified": "2026-11-26",
+   "how": "homepage-fetch"
+  }
+ ]
+}
