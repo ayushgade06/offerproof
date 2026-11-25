@@ -28,3 +28,9 @@ export async function getShare(id: string): Promise<(RedactedResult & { createdA
     createdAt: new Date(r.created_at).toISOString(),
   };
 }
+
+export async function shareExists(id: string): Promise<boolean> {
+  if (!/^[A-Za-z0-9_-]{6,20}$/.test(id)) return false;
+  const rows = await sql()`select 1 from shared_verdicts where id = ${id} and created_at > now() - interval '90 days'`;
+  return rows.length > 0;
+}
