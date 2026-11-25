@@ -61,9 +61,21 @@ export function severityFor(weight: number): Severity {
 
 /** Merge AI signals that duplicate a fired rule into that rule (as aiNote). */
 export function dedupe(signals: Signal[]): Signal[] {
-  const byId = new Map(signals.filter((s) => s.source !== "ai").map((s) => [s.id, s]));
-  const out: Signal[] = signals.filter((s) => s.source !== "ai").map((s) => ({ ...s }));
-  const outById = new Map(out.map((s) => [s.id, s]));
+  // One signal per id: e.g. two unregistered domains are one piece of evidence, not two (no double weight).
+  const out: Signal[] = [];
+  const outById = new Map<string, Signal>();
+  for (const s of signals.filter((x) => x.source !== "ai")) {
+    const prev = outById.get(s.id);
+    if (prev) {
+      prev.evidence = [...prev.evidence, ...s.evidence];
+      if (s.detail && prev.detail !== s.detail) prev.detail = `${prev.detail ?? ""}; ${s.detail}`.replace(/^; /, "");
+      continue;
+    }
+    const copy = { ...s, evidence: [...s.evidence] };
+    out.push(copy);
+    outById.set(s.id, copy);
+  }
+  const byId = outById;
   for (const s of signals.filter((x) => x.source === "ai")) {
     const ruleId = SCORING.aiToRule[s.id.replace(/^AI_/, "")];
     const rule = ruleId && byId.has(ruleId) ? outById.get(ruleId) : undefined;

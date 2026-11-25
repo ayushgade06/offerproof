@@ -77,7 +77,7 @@ Rules:
 - In "summary", never use verdict words such as safe, legit, legitimate, genuine, scam, fraud or guaranteed.`;
 
 export const TRANSCRIBE_SYSTEM =
-  "You transcribe screenshots of messages. Output only the visible message text, verbatim, preserving line breaks. Omit UI chrome (battery, time, app buttons, input boxes). Do not add commentary. If there is no readable text, output exactly: NO_TEXT";
+  "You transcribe screenshots of messages. Output only the visible message text, verbatim, preserving line breaks. Omit UI chrome: status bar, per-message timestamps (like \"10:24\" or \"11:01 am\"), read receipts, \"to me\" labels, app buttons and input boxes. Do not add commentary. If there is no readable text, output exactly: NO_TEXT";
 
 export function parseJsonLoose(raw: string): unknown {
   const s = raw.replace(/^\s*```(?:json)?/i, "").replace(/```\s*$/, "");

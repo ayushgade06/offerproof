@@ -100,7 +100,7 @@ function gap(a: { start: number; end: number }, b: { start: number; end: number 
 
 const FEE_RE =
   /\b(?:registration|training|joining|onboarding|processing|verification|security|enrol?l?ment|admission|documentation|document|application|kit|id card|uniform|laptop)\s*(?:fees?|charges?|deposit|amount)\b|\bsecurity deposit\b|\brefundable\b|\bkit charges?\b|\bpay\b[^.\n]{0,40}?\bto (?:confirm|secure|book|reserve|activate)\b|\bfees? (?:bharn[ae]|bharo|jama|dena)\b|\bregistration ke liye\b|\bpaise? (?:bhej\w*|jama|dena)\b/gi;
-const PAY_CHANNEL_RE = /\b(?:upi|qr code|scan (?:the |this )?qr|gpay|google pay|phonepe|phone pe|paytm|bhim)\b/gi;
+const PAY_CHANNEL_RE = /\b(?:upi|usdt|btc|bitcoin|crypto|trc-?20|qr code|scan (?:the |this )?qr|gpay|google pay|phonepe|phone pe|paytm|bhim)\b/gi;
 const PAY_VERB_RE = /\b(?:pay|send|transfer|deposit|scan)\b/gi;
 
 const rules: Record<RuleId, Rule> = {
@@ -131,7 +131,8 @@ const rules: Record<RuleId, Rule> = {
   R_PERSONAL_DOCS(text) {
     const always = find(text, /\b(?:otp|cvv|card details|debit card (?:number|details)|credit card (?:number|details)|atm pin|upi pin|net ?banking (?:password|login|details)|selfie with (?:your )?(?:id|aadhaa?r|pan))\b/gi);
     const docs = find(text, /\b(?:aadhaa?r(?: card| number)?|pan card|pan number|bank account(?: number| details)?|ifsc(?: code)?|passport (?:copy|scan|number))\b/gi);
-    const interviewed = /\binterview/i.test(text);
+    // After an interview or an accepted offer, collecting ID and bank details for payroll is normal.
+    const interviewed = /\b(?:interview|acceptance of (?:our|the|your) offer|accepted (?:our|the|your) offer|pre-?joining|onboarding portal|joining date)/i.test(text);
     return sig("R_PERSONAL_DOCS", interviewed ? always : [...always, ...docs]);
   },
 

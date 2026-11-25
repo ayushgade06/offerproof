@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-11-25T20:10:03.548186+00:00",
+  "split": "test",
+  "baseUrl": "http://localhost:3417",
+  "provider": "anthropic",
+  "model": "claude-haiku-5-5",
+  "datasets": {
+    "handwritten": {
+      "n": 42,
+      "description": "hand-written fictional messages",
+      "source": "Written by an AI agent (Claude) that never saw the detector's code, modeled on scam patterns described in public advisories. Sources: eval/SOURCES.md."
+    }
+  },
+  "metrics": {
+    "handwritten": {
+      "n": 42,
+      "precision": 0.8261,
+      "recall": 1.0,
+      "f1": 0.9048,
+      "accuracy": 0.9048,
+      "confusion": {
+        "tp": 19,
+        "fp": 4,
+        "tn": 19,
+        "fn": 0
+      },
+      "tiers": {
+        "legit:no_major_flags": 19,
+        "scam:high_risk": 14,
+        "legit:suspicious": 4,
+        "scam:suspicious": 5
+      }
+    }
+  },
+  "misses": {
+    "handwritten": [
+      {
+        "id": "hw-006",
+        "label": "legit",
+        "verdict": "suspicious",
+        "score": 40,
+        "flagged": true,
+        "signals": [
+          "L_DOMAIN_UNREGISTERED"
+        ]
+      },
+      {
+        "id": "hw-010",
+        "label": "legit",
+        "verdict": "suspicious",
+        "score": 35,
+        "flagged": true,
+        "signals": [
+          "R_PERSONAL_DOCS"
+        ]
+      },
+      {
+        "id": "hw-061",
+        "label": "legit",
+        "verdict": "suspicious",
+        "score": 40,
+        "flagged": true,
+        "signals": [
+          "AI_personal_data_request",
+          "AI_pressure_tactics",
+          "R_GENERIC_GREETING_OFFER"
+        ]
+      },
+      {
+        "id": "hw-070",
+        "label": "legit",
+        "verdict": "suspicious",
+        "score": 40,
+        "flagged": true,
+        "signals": [
+          "L_DOMAIN_UNREGISTERED"
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "Held-out test split; scoring weights may be tuned only on the dev split.",
+    "All cases are fictional. Synthetic and hand-written data likely overestimate real-world accuracy.",
+    "Re-run after fixing a bug the first test run exposed: two different unregistered domains in one message were counted as two signals. First test run (before the fix): precision 79.2%, recall 100%, F1 88.4% on the same 42 cases.",
+    "Some fictional legitimate messages use made-up sender domains. The live lookup correctly reports them as unregistered, which can produce false positives that a real company's domain would not."
+  ]
+}

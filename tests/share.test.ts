@@ -3,6 +3,7 @@ import { analyze } from "../lib/analyze";
 import { redactResult, redactText } from "../lib/redact";
 import { canonicalJSON, RedactedSchema, signShare, verifyShare } from "../lib/share";
 import { SAMPLES } from "../lib/samples";
+import type { RedactedResult } from "../lib/types";
 
 const PII = /[\w.+-]+@[\w-]+|\+?\d(?:[\s-]?\d){9,}/;
 
@@ -30,7 +31,7 @@ describe("redacted share card", () => {
 });
 
 describe("share token", () => {
-  const card = { verdict: "high_risk", score: 85, summary: "s", claimedCompany: null, signals: [] } as const;
+  const card: RedactedResult = { verdict: "high_risk", score: 85, summary: "s", claimedCompany: null, signals: [] };
   it("verifies an untampered card", () => {
     expect(verifyShare(card, signShare(card, "k"), "k")).toBe(true);
   });

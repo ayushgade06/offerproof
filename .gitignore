@@ -45,3 +45,6 @@ test-results/
 playwright-report/
 eval/.venv/
 __pycache__/
+
+.vercel
+.env*

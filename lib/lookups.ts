@@ -198,8 +198,10 @@ export async function runNetworkLookups(entities: Entities, now = Date.now()): P
     }
   });
 
+  const unregistered = new Set(toCheck.filter((_, i) => ages[i].status === "unregistered").map((d) => d.domain));
   mxDomains.forEach((d, i) => {
     const r = mxs[i];
+    if (unregistered.has(d)) return; // already flagged as unregistered, which implies no mail servers: don't double-count
     const id = `L_NO_MX:${d}`;
     const label = `Email domain can receive mail: ${d}`;
     if (r === "unavailable") checks.push({ id, label, status: "unavailable", detail: "DNS lookup didn't respond" });

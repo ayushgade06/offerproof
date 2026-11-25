@@ -49,7 +49,7 @@ const PIPELINE = [
 ];
 
 const LIMITATIONS = [
-  "Our evaluation data is partly synthetic and hand-written, so it likely overestimates real-world accuracy.",
+  "Our evaluation messages are fictional (written by an AI agent that never saw our code), so they likely overestimate real-world accuracy.",
   "OfferProof only sees text. It can't verify claims inside PDFs or images beyond the words it reads.",
   "New scam scripts may not match our rules, and the AI reviewer can miss things.",
   "A young domain is a warning sign, not proof of a scam. An old domain isn't proof of safety.",

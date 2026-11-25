@@ -15,6 +15,7 @@ const FIXTURES: Record<Id, { pos: string[]; neg: string[] }> = {
       "Registration ke liye ₹499 bhejo is UPI pe.",
       "Please pay via UPI to hr.jobs@okaxis to activate your ID.",
       "Scan the QR code and send the amount to book your slot.",
+      "Deposit 50 USDT (TRC20) to activate your work account.",
     ],
     neg: [
       "Your CTC is ₹6,00,000 per annum. The interview is on Monday.",
@@ -38,6 +39,7 @@ const FIXTURES: Record<Id, { pos: string[]; neg: string[] }> = {
       "After your interview, HR will collect your PAN card for payroll onboarding.",
       "Please bring your college ID to the interview.",
       "Your offer letter is attached. No documents needed yet.",
+      "Following your acceptance of our offer, upload your PAN card and bank account details on the onboarding portal.",
     ],
   },
   R_FREEMAIL_RECRUITER: {

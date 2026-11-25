@@ -125,3 +125,13 @@ describe.runIf(process.env.LIVE === "1")("live RDAP", () => {
     if (r.status === "registered") expect(Date.now() - Date.parse(r.registeredAt)).toBeGreaterThan(20 * 365 * 86_400_000);
   });
 });
+
+describe("no double counting", () => {
+  it("an unregistered email domain is not also flagged for missing MX", async () => {
+    vi.stubGlobal("fetch", vi.fn(async () => json(404, {})));
+    dnsMock.resolveNs.mockRejectedValue(enotfound());
+    dnsMock.resolveMx.mockRejectedValue(enotfound());
+    const r = await runNetworkLookups(extractEntities("HR: jobs@nowhere-hiring-xyz.com"), NOW);
+    expect(r.signals.map((s) => s.id)).toEqual(["L_DOMAIN_UNREGISTERED"]);
+  });
+});

@@ -52,3 +52,15 @@ describe("dedupe", () => {
     expect(dedupe([s("R_URGENCY", 0.1), s("AI_impersonation_claim", 0.3, "ai")]).length).toBe(2);
   });
 });
+
+describe("dedupe merges same-id signals", () => {
+  it("two unregistered domains count once, with both pieces of evidence", () => {
+    const a = { ...s("L_DOMAIN_UNREGISTERED", 0.4, "lookup"), evidence: [{ start: 0, end: 1, quote: "a" }], detail: "d1" };
+    const b = { ...s("L_DOMAIN_UNREGISTERED", 0.4, "lookup"), evidence: [{ start: 5, end: 6, quote: "b" }], detail: "d2" };
+    const out = dedupe([a, b]);
+    expect(out.length).toBe(1);
+    expect(out[0].evidence.length).toBe(2);
+    expect(out[0].detail).toBe("d1; d2");
+    expect(scoreSignals(out).score).toBe(40);
+  });
+});
