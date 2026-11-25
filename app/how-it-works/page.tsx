@@ -120,7 +120,8 @@ export default function HowItWorks() {
             at {SCORING.aiCap}. The AI can make us suspicious, but only hard evidence can make us say High risk.
           </p>
         </div>
-        <dl className="self-start rounded-xl border border-rule bg-card p-5 font-mono text-[13px] shadow-card">
+        <div className="self-start rounded-xl border border-rule bg-card p-5 font-mono text-[13px] shadow-card">
+          <dl>
           {[
             ["High risk", `score ≥ ${SCORING.highRisk}`, "text-risk"],
             ["Suspicious", `${SCORING.suspicious}–${SCORING.highRisk - 1}`, "text-warn-ink"],
@@ -131,8 +132,9 @@ export default function HowItWorks() {
               <dd className="text-muted">{v}</dd>
             </div>
           ))}
+          </dl>
           <p className="pt-3 font-sans text-[13px] text-muted">We never say &quot;safe&quot;. The lowest tier is &quot;No major red flags found&quot;, followed by how to verify.</p>
-        </dl>
+        </div>
       </section>
 
       {/* Accuracy */}
@@ -176,7 +178,7 @@ export default function HowItWorks() {
                       <caption className="sr-only">Confusion matrix for {name}</caption>
                       <thead>
                         <tr className="text-muted">
-                          <th scope="col" className="py-1 text-left font-normal"></th>
+                          <th scope="col" className="py-1 text-left font-normal"><span className="sr-only">Actual label</span></th>
                           <th scope="col" className="py-1 text-right font-normal">Flagged</th>
                           <th scope="col" className="py-1 text-right font-normal">Not flagged</th>
                         </tr>
